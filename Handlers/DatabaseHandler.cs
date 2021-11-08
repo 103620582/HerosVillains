@@ -8,7 +8,7 @@ namespace GameAPI
 {
     public abstract class DatabaseHandler 
     {
-        public string GetConnectionString() {
+        public static string GetConnectionString() {
             try {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.DataSource = "SwinJoy.mssql.somee.com";
@@ -20,11 +20,9 @@ namespace GameAPI
             catch(Exception e) {
                 throw new Exception("Error in GetConnectionStrings() " + e.Message);
             }           
-        }
+        }        
     }
 }
 
-//                 builder.DataSource = "SwinJoy.mssql.somee.com";
-//                 builder.UserID = "JA103620582_SQLLogin_1";
-//                 builder.Password = "wvof9j1kup";
-//                 builder.InitialCatalog = "SwinJoy";
+
+

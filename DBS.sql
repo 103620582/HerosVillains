@@ -1,8 +1,8 @@
 
--- SELECT name, database_id, create_date  
--- FROM sys.databases ;  
+SELECT name, database_id, create_date  
+FROM sys.databases ;  
 -- -- GO 
--- USE SwinJoy;
+USE SwinJoy;
 
 IF OBJECT_ID('HERO') IS NOT NULL
 DROP TABLE HERO;
@@ -61,10 +61,10 @@ VALUES (1, '2021-10-04')
 INSERT INTO ACTION (HEROID, VILLAINID, GAMEID, TURNCOUNTER)
 VALUES (222, 666, 1, 4)
 
--- SELECT * FROM HERO;
--- GO
--- SELECT * FROM VILLAIN;
--- GO
--- SELECT * FROM ACTION;
--- GO
--- SELECT * FROM GAME;
+SELECT * FROM HERO;
+GO
+SELECT * FROM VILLAIN;
+GO
+SELECT * FROM ACTION;
+GO
+SELECT * FROM GAME;

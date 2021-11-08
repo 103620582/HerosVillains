@@ -44,7 +44,6 @@
 /Users/joyambrose/OneDrive - Swinburne University/DAD/HeroVillain/GameAPI/obj/Debug/net5.0/staticwebassets/GameAPI.StaticWebAssets.xml
 /Users/joyambrose/OneDrive - Swinburne University/DAD/HeroVillain/GameAPI/obj/Debug/net5.0/scopedcss/bundle/GameAPI.styles.css
 /Users/joyambrose/OneDrive - Swinburne University/DAD/HeroVillain/GameAPI/obj/Debug/net5.0/GameAPI.RazorTargetAssemblyInfo.cache
-/Users/joyambrose/OneDrive - Swinburne University/DAD/HeroVillain/GameAPI/obj/Debug/net5.0/GameAPI.csproj.CopyComplete
 /Users/joyambrose/OneDrive - Swinburne University/DAD/HeroVillain/GameAPI/obj/Debug/net5.0/GameAPI.dll
 /Users/joyambrose/OneDrive - Swinburne University/DAD/HeroVillain/GameAPI/obj/Debug/net5.0/ref/GameAPI.dll
 /Users/joyambrose/OneDrive - Swinburne University/DAD/HeroVillain/GameAPI/obj/Debug/net5.0/GameAPI.pdb

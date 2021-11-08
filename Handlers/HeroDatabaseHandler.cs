@@ -6,11 +6,12 @@ using System.Linq;
 
 namespace GameAPI {
     public class HeroDatabaseHandler : DatabaseHandler {
-        public List<Hero> GetAllHeroesFromDB() {
+        public static List<Hero> GetAllHeroes() {
             List<Hero> returnHero = new List<Hero>();
 
             using(SqlConnection conn = new SqlConnection(GetConnectionString())) {
                 try {
+
                     conn.Open();
                     using(SqlCommand command = new SqlCommand ("SELECT * FROM HERO", conn)) {
                         using (SqlDataReader reader = command.ExecuteReader()) {
@@ -27,7 +28,7 @@ namespace GameAPI {
                     }
                 }
                 catch (Exception e) {
-                    throw new Exception("Error in GetAllDemoFromDB()" + e.Message);
+                    throw new Exception("Error in GetAllHeroes()" + e.Message);
                 }
                 finally {
                     conn.Close();

@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace GameAPI {
     public class VillainDatabaseHandler : DatabaseHandler {
-        public List<Villain> GetAllVillainsFromDB() {
+        public static List<Villain> GetAllVillainsFromDB() {
             List<Villain> returnVillain = new List<Villain>();
 
             using(SqlConnection conn = new SqlConnection(GetConnectionString())) {

@@ -11,11 +11,6 @@ namespace GameAPI.Controllers
     [Route("[controller]")]
     public class VillainController : ControllerBase
     {
-        static List<Villain> villainList = new List<Villain>() {
-
-            new Villain(3, "Donald Trump", 0),
-            new Villain(666, "Whiterose", 0)
-        };
 
         private readonly ILogger<VillainController> _logger;
         
@@ -23,10 +18,22 @@ namespace GameAPI.Controllers
         {
             _logger = logger;
         }
+
         [HttpGet]
-        public IEnumerable<Villain> GetVillains() {
-            return villainList;
+        public static IEnumerable<Villain> GetAllVillains() {
+            return VillainDatabaseHandler.GetAllVillainsFromDB();
         }
+
+        // static List<Villain> villainList = new List<Villain>() {
+
+        //     new Villain(3, "Donald Trump", 0),
+        //     new Villain(666, "Whiterose", 0)
+        // };
+
+        // [HttpGet]
+        // public IEnumerable<Villain> GetVillains() {
+        //     return villainList;
+        // }
 
         // [HttpPut]
         // public List
