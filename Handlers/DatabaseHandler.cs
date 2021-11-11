@@ -18,7 +18,7 @@ namespace GameAPI
                 return builder.ConnectionString;
             }
             catch(Exception e) {
-                throw new Exception("Error in GetConnectionStrings() " + e.Message);
+                throw new Exception("500 - INTERNAL SERVER ERROR - Error in GetConnectionStrings() " + e.Message);
             }           
         }        
     }

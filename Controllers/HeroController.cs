@@ -21,9 +21,30 @@ namespace GameAPI.Controllers
         }
 
         [HttpGet]
-        public static IEnumerable<Hero> Get() {
+        public List<Hero> Get() {
             return HeroDatabaseHandler.GetAllHeroes();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
